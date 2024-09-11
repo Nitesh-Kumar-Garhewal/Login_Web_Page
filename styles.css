@@ -1,0 +1,196 @@
+/* Basic Reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.389);
+
+    background-image: url('20210828_AWAK_23-1024x683.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.884); 
+    z-index: -1; 
+} 
+
+
+form {
+    position: relative;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    background-color: #2f2e2eac; 
+}
+
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: #000000;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ffffff; 
+}
+
+
+input {
+    width: 100%; 
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+
+.password-container {
+    position: relative;
+}
+
+#password {
+    padding-right: 70px; /
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 40%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 14px;
+    color: #337ab7; 
+    padding: 0;
+    margin: 0;
+    line-height: 20px;
+    width: 60px; 
+    height: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.toggle-password:hover {
+    color: #23527c; 
+    background: none; 
+}
+
+
+.error-message {
+    color: #e74c3c; 
+    font-size: 17px;
+    
+}
+
+
+.remember-me-container {
+    display: -webkit-box;
+    align-items: center;
+    margin-bottom: 18px;
+    margin-right: 410px;
+}
+
+.remember-me-container input[type="checkbox"] {
+    margin-right: 20px; 
+}
+
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #337ab7; 
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #23527c; 
+}
+
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.94);
+    border-radius: 50%;
+    border-top: 4px solid grey;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    margin: 10px 0;
+}
+
+
+#message {
+    color: chartreuse;
+    font-size:  20px;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    form {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .password-container {
+        width: 100%;
+    }
+
+    #password {
+        padding-right: 70px; 
+    }
+
+    .toggle-password {
+        width: auto; 
+        height: auto; 
+        font-size: 12px; 
+        right: 10px;
+    }
+}
