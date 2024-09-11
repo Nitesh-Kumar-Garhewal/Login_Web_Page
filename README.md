@@ -27,16 +27,16 @@ This project presents a responsive login page developed using HTML, CSS, and Jav
 ## Contributions :-
 Contributions and improvements are welcome. Please open an issue or submit a pull request for any suggestions or fixes.
 
-## How to Run the Project
+## How to Run the Project :-
 
-1. **Clone the Repository**
+1. **Clone the Repository** : 
 
    Open your terminal or command prompt and run the following command:
 
    ```bash
    git clone https://github.com/Nitesh-Kumar-Garhewal/Login_Web_Page.git
 
-## Live Demo
+## Live Demo :-
 
 You can view a live demo of the project at:
 
