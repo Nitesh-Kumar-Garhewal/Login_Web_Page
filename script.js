@@ -69,13 +69,13 @@ document
       .then((data) => {
         document.getElementById("loadingSpinner").hidden = true;
         document.getElementById("message").textContent = "Login successful...!";
-        // Handle successful login here
+        
       })
       .catch((error) => {
         document.getElementById("loadingSpinner").hidden = true;
         document.getElementById("message").textContent =
           "Login failed. Please try again.";
-        // Handle login error here
+        
       });
   });
 
