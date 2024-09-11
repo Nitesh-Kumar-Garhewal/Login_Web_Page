@@ -1,5 +1,7 @@
 # Login_Web_Page
 
+This repository contains a simple login page built using HTML, CSS, and JavaScript. The page features form validation, a password visibility toggle, and a loading spinner for the login process.
+
 ## Overview :-
 This project presents a responsive login page developed using HTML, CSS, and JavaScript. The page interfaces with a public API for user authentication and features comprehensive client-side validations. It is designed to deliver a smooth user experience across both desktop and mobile devices.
 
@@ -24,3 +26,18 @@ This project presents a responsive login page developed using HTML, CSS, and Jav
 
 ## Contributions :-
 Contributions and improvements are welcome. Please open an issue or submit a pull request for any suggestions or fixes.
+
+## How to Run the Project
+
+1. **Clone the Repository**
+
+   Open your terminal or command prompt and run the following command:
+
+   ```bash
+   git clone https://github.com/Nitesh-Kumar-Garhewal/Login_Web_Page.git
+
+## Live Demo
+
+You can view a live demo of the project at:
+
+
