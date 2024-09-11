@@ -38,22 +38,23 @@ Contributions and improvements are welcome. Please open an issue or submit a pul
 
 2. **Navigate to the Project Directory** :
 
-Change your working directory to the project folder:
+Change your working directory to the project folder :
 
 cd Login_Web_Page
 
 3. **Open the Project in Your Browser** :
    
-Open the index.html file in your web browser. You can do this by:
+Open the index.html file in your web browser. You can do this by :
 
 - Double-clicking the index.html file in your file explorer, or
 
-- Using the following command in your terminal:
+- Using the following command in your terminal :
+  
   open index.html
 
 ## Live Demo :-
 
-You can view a live demo of the project at:
+You can view a live demo of the project at :
 
 https://nitesh-kumar-garhewal.github.io/Login_Web_Page/
 
