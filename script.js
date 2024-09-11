@@ -3,11 +3,11 @@ document
   .addEventListener("submit", function (event) {
     event.preventDefault();
 
-    // Hide previous messages
+    
     document.getElementById("message").textContent = "";
     document.getElementById("loadingSpinner").hidden = false;
 
-    // Clear previous error messages
+
     document.getElementById("usernameError").textContent = "";
     document.getElementById("passwordError").textContent = "";
 
@@ -15,11 +15,11 @@ document
     const password = document.getElementById("password").value;
     const rememberMe = document.getElementById("rememberMe").checked;
 
-    // Log Username/Email and Password to the console
+   
     console.log("Username/Email:", username);
     console.log("Password:", password);
 
-    // Basic client-side validation
+   
     let valid = true;
     if (!username) {
       document.getElementById("usernameError").textContent =
@@ -46,7 +46,7 @@ document
       return;
     }
 
-    // Send API request
+    
     fetch("https://jsonplaceholder.typicode.com/posts", {
       method: "POST",
       headers: {
@@ -79,7 +79,7 @@ document
       });
   });
 
-// Show/Hide Password Functionality
+
 document
   .getElementById("togglePassword")
   .addEventListener("click", function () {
