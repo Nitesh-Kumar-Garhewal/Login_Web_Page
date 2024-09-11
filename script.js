@@ -3,11 +3,13 @@ document
   .addEventListener("submit", function (event) {
     event.preventDefault();
 
+    // Used to hide previous messages
     
     document.getElementById("message").textContent = "";
     document.getElementById("loadingSpinner").hidden = false;
 
-
+    // Used to clear previous error messages
+    
     document.getElementById("usernameError").textContent = "";
     document.getElementById("passwordError").textContent = "";
 
@@ -15,11 +17,13 @@ document
     const password = document.getElementById("password").value;
     const rememberMe = document.getElementById("rememberMe").checked;
 
-   
+   // Log Username/Email and Password to the console
+    
     console.log("Username/Email:", username);
     console.log("Password:", password);
 
-   
+   // Basic client-side validation
+    
     let valid = true;
     if (!username) {
       document.getElementById("usernameError").textContent =
@@ -46,6 +50,7 @@ document
       return;
     }
 
+    // Send API request
     
     fetch("https://jsonplaceholder.typicode.com/posts", {
       method: "POST",
@@ -67,11 +72,17 @@ document
         }
       })
       .then((data) => {
+        
+        // Handle successful login here
+        
         document.getElementById("loadingSpinner").hidden = true;
         document.getElementById("message").textContent = "Login successful...!";
         
       })
       .catch((error) => {
+        
+        // Handle login error here
+        
         document.getElementById("loadingSpinner").hidden = true;
         document.getElementById("message").textContent =
           "Login failed. Please try again.";
@@ -79,6 +90,7 @@ document
       });
   });
 
+// Show/Hide Password Functionality
 
 document
   .getElementById("togglePassword")
@@ -89,9 +101,9 @@ document
 
     if (passwordType === "password") {
       passwordField.setAttribute("type", "text");
-      toggleButton.textContent = "Hide"; // Change text to 'Hide'
+      toggleButton.textContent = "Hide";            // Change text to 'Hide'
     } else {
       passwordField.setAttribute("type", "password");
-      toggleButton.textContent = "Show"; // Change text to 'Show'
+      toggleButton.textContent = "Show";           // Change text to 'Show'
     }
   });
